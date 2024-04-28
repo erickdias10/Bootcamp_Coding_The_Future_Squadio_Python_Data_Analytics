@@ -1,0 +1,26 @@
+# Desafio: A Jornada da Classificação Frutífera
+# Solução e explicação:
+
+def prever_fruta(peso, textura, cor):
+    # Lógica de decisão baseada nas características fornecidas
+    if peso >= 150 and textura == "smooth" and cor == "red":
+        return "A fruta é um morango!"  # Retorna esta mensagem se as características correspondem a um morango
+    if peso >= 130 and textura == "rough" and cor == "red":
+        return "A fruta é uma maçã!"  # Retorna esta mensagem se as características correspondem a uma maçã
+    if peso >= 120 and textura == "smooth" and cor == "orange":
+        return "A fruta é uma laranja!"  # Retorna esta mensagem se as características correspondem a uma laranja
+    if peso >= 150 and textura == "rough" and cor == "yellow":
+        return "A fruta é uma banana!"  # Retorna esta mensagem se as características correspondem a uma banana
+    return "Não foi possível classificar a fruta."  # Retorna esta mensagem se as características não correspondem a nenhuma das frutas conhecidas
+
+
+# Entrada do usuário
+peso_fruta = float(input())  # Pede ao usuário para inserir o peso da fruta
+textura_fruta = input()  # Pede ao usuário para inserir a textura da fruta
+cor_fruta = input()  # Pede ao usuário para inserir a cor da fruta
+
+# Chamada da função de previsão, passando os dados da fruta fornecidos pelo usuário
+resultado = prever_fruta(peso_fruta, textura_fruta, cor_fruta)
+
+# Saída da previsão
+print(resultado)  # Imprime o resultado da previsão

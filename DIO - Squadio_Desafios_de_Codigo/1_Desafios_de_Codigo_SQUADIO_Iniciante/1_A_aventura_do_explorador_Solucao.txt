@@ -1,0 +1,20 @@
+# Desafio: A Aventura do Explorador
+# SOLUÇÃO E EXPLICAÇÃO:
+
+# Solicita a quantidade de passos que o explorador deu na floresta
+quantidade_passos = int(input())  # quantidade de passos que o explorador deu na floresta 
+
+# Verifica se a quantidade de passos é positiva
+if quantidade_passos <= 0:
+    # Imprime a mensagem caso a quantidade de passos seja zero ou negativa
+    print("Nenhum passo dado na floresta.")
+else:
+    # Loop for para imprimir a mensagem do explorador
+    for passo in range(1, quantidade_passos + 1):
+        # Verifica se o número do passo é igual a 1
+        if passo == 1:
+            # Imprime a mensagem do explorador indicando o número do passo no singular
+            print(f"Explorador: {passo} passo")
+        else:
+            # Imprime a mensagem do explorador indicando o número dos passos no plural
+            print(f"Explorador: {passo} passos")

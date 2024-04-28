@@ -1,0 +1,15 @@
+# Desafio: O Grande Depósito - Solucionando Problemas Bancários
+# SOLUÇÃO E EXPLICAÇÃO:
+
+valor = float(input())  # Solicita ao usuário que insira um valor e converte para um número de ponto flutuante (float)
+
+if valor > 0:
+    # Se o valor inserido for maior que zero, imprime a mensagem de depósito bem-sucedido,
+    # formatando o saldo atual com duas casas decimais.
+    print(f"Deposito realizado com sucesso!\n Saldo atual: R$ {valor:.2f}")
+elif valor < 0:
+    # Se o valor inserido for menor que zero, imprime a mensagem de valor inválido.
+    print("Valor invalido! Digite um valor maior que zero.")
+else:
+    # Se o valor inserido for igual a zero, imprime a mensagem de encerramento do programa.
+    print("Encerrando o programa...")

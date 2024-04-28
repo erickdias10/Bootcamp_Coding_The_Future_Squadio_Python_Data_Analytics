@@ -1,0 +1,33 @@
+# Desafio: O Robô inteligente
+# Solução e explicação:
+
+# Função para classificar um número como positivo ou negativo
+def classificar_numero(numero):
+    if numero > 0:
+        return "positivo!"  # Retorna "positivo!" se o número for maior que zero
+    return "negativo!"  # Retorna "negativo!" caso contrário
+
+def main():
+    positivos = 0  # Variável para contar a quantidade de números positivos
+    negativos = 0  # Variável para contar a quantidade de números negativos
+
+    while True:
+        numero = int(input())  # Solicita ao usuário que insira um número
+
+        if numero == 0:
+            break  # Encerra o loop se o usuário digitar 0.
+
+        # Chama a função classificar_numero para imprimir a classificação do número
+        print(classificar_numero(numero))
+
+        # Verificação para saber quantos números positivos e negativos foram inseridos
+        if classificar_numero(numero) == "positivo!":
+            positivos += 1  # Incrementa o contador de números positivos
+        else:
+            negativos += 1  # Incrementa o contador de números negativos
+
+    # Imprime a quantidade de números positivos e negativos inseridos
+    print(f"{positivos} números positivos, {negativos} números negativos")
+
+if __name__ == "__main__":
+    main()

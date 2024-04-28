@@ -1,0 +1,19 @@
+# Desafio: Estrutura de Dados Organizando Os Seus Ativos Desafio
+# SOLUÇÃO E EXPLICAÇÃO:
+
+ativos = []  # Cria uma lista vazia para armazenar os ativos.
+
+# Entrada da quantidade de ativos fornecida pelo usuário.
+quantidadeAtivos = int(input())
+
+# Entrada dos códigos dos ativos e os adiciona à lista de ativos.
+for _ in range(quantidadeAtivos):
+    codigoAtivo = input()  # Solicita ao usuário que insira o código do ativo.
+    ativos.append(codigoAtivo)  # Adiciona o código do ativo à lista de ativos.
+
+# Ordena os ativos em ordem alfabética.
+ativos.sort()
+
+# Imprime a lista de ativos ordenada, conforme a tabela de exemplos.
+for i in range(quantidadeAtivos):
+    print(ativos[i] + "\n")  # Imprime cada código de ativo seguido de uma quebra de linha.
